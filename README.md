@@ -20,7 +20,7 @@ It also has a rudimentary read-only API:
 ##**Credits**
 Based on GTFS data collected by the Digital Matatus project (http://www.digitalmatatus.com/)
 
-#*Pull Requests**
+#**Pull Requests**
 Pull requests are welcome! 
 
 #**License**
