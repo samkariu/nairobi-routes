@@ -1,0 +1,38 @@
+stop_id,stop_code ,stop_name,Description,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,,,,,,,,,
+0410NAI,,Umoja stage,D,-1.296393,36.886606
+0411MUT,,Mtindwa,D,-1.28512,36.883921
+0401CLX,,Caltex,ND,-1.278327,36.882877
+0401UMJ,,Umoja junction,ND,-1.276388,36.886054
+0401UM3,,Umoja 3,ND,-1.274166,36.894854
+0401MLH,,Mama Lucy,ND,-1.272892,36.89732
+0401SPL,,Supa Loaf,ND,-1.269006,36.901947
+0401KOJ,,Koma Junction,ND,-1.265643,36.904574
+0401VWP,,View park,N/D,-1.266782,36.906233,,,,,,,,,,,,,
+0411IFB,,Infill B,D,-1.26612,36.90682,,,,,,,,,,,,,
+0401IFB,,Infill B,N/D,-1.26579,36.90711,,,,,,,,,,,,,
+0401S3B,,Sector 3B,N/D,-1.26513,36.90769,,,,,,,,,,,,,
+0411RNDA,,Rounda ,D,-1.26424,36.90834,,,,,,,,,,,,,
+0401P1M,, Phase1  Market ,N/D,-1.26243,36.9103,,,,,,,,,,,,,
+0411P1M,, Phase1  Market ,D,-1.26219,36.9106,,,,,,,,,,,,,
+0401MVC,,Mvinje court,N/D,-1.26178,36.91165,,,,,,,,,,,,,
+0401MKC,,Mukokoa court,N/D,-1.262199,36.912699,,,,,,,,,,,,,
+0401MSC,,Msisi court,N/D,-1.262869,36.913268,,,,,,,,,,,,,
+0401MBC,,Mbuyu court,N/D,-1.2633,36.91375,,,,,,,,,,,,,
+0401MPC,,Msaponi court,D,-1.26368,36.91417,,,,,,,,,,,,,
+0411MPC,,Msaponi court,N/D,-1.26399,36.9145,,,,,,,,,,,,,
+0401MKC,,Mkanju court,N/D,-1.26413,36.91478,,,,,,,,,,,,,
+0400SP1,,step 1,N/D,-1.26518,36.91656,,,,,,,,,,,,,
+0400TSH,,Tushauriane,N/D,-1.26644,36.9161,,,,,,,,,,,,,
+0410TSH,,Tushauriane,D,-1.26719,36.91544,,,,,,,,,,,,,
+0400KNS,,Kanisani,ND,-1.269092,36.913476
+0400RND,,Rounda,ND,-1.264403,36.908316
+0400S3B,,Sector 3B,ND,-1.265207,36.90773
+0400VPK,,View park,ND,-1.26695,36.906144
+0400KMJ,,Kona/Junction,ND,-1.265643,36.904574
+0400MLH,,Mama Lucy,ND,-1.273022,36.897279
+0400EST,,East Capital ,ND,-1.275294,36.891604
+0400UMJ,,Junction /Umoja,ND,-1.275972,36.887153
+0400CLX,,Caltex,ND,-1.27863,36.882912
+0410MUT,,Mtindwa,D,-1.285453,36.884186
+0400STL,,Stella,ND,-1.289596,36.885163
+0410NAI,,Umoja stage,D,-1.296591,36.886749

@@ -1,0 +1,9 @@
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station
+021RLW,,Railways,Main Terminus,-1.291665,36.828801,,,,
+021MKD,,Makadara,Station,-1.298483,36.868608,,,,
+020DON,,Donholm,No station,-1.300076,36.886804,,,,
+020KWR,,Kware,No station,-1.308555,36.890157,,,,
+020PPL,,Pipeline,No station,-1.317215,36.895509,,,,
+020TJM,,TajMall,No station,-1.321799,36.898432,,,,
+020AVT,,Aviation,No station,-1.318653,36.907909,,,,
+020EMB,,Embakasi,Station,-1.315018,36.918856,,,,

@@ -1,0 +1,9 @@
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station
+0201LUT,,Luthuli avenue,ND,-1.284831,36.826986,,,,
+0201KDC,,Karikor Kwa Dc,ND,-1.277806,36.835454,,,,
+0201RZA,,Riziki academy,ND,-1.28067,36.838466,,,,
+0201GKM,,Gikomba,ND,-1.284125,36.840499,,,,
+0200GKM,,Gikomba,ND,-1.284086,36.840838,,,,
+0200EQY,,Equity Gikomba,ND,-1.28519,36.83802,,,,
+0410SVA,,Salvation Army,D,-1.285316,36.83068,,,,
+0410TWN,,Town,ND,-1.284717,36.826758,,,,

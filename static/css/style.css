@@ -1,0 +1,41 @@
+dl {
+  margin-bottom: 10px;
+}
+
+dt {
+  font-weight: normal;
+}
+
+dt,dd {
+  line-height: 25px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+.home_bp{background:transparent url(../img/logo.png) top center no-repeat;padding-top:20em;text-align:center}.home_bp h1{font-size:1.6em}.home_bp p{font-size:1.2em}
+
+#ajax-panel{
+	height: 32px;
+}
+
+.loading{
+	height:32px;
+	width: 32px;
+}
+.sec-border{
+	border-radius: 5px;
+	background: #AAA;
+	opacity: 0.7;
+	padding: 4px;
+}
+
+.planner-map{
+	height: 450px;
+}
+
+#map-canvas{
+	height: 450px;
+}
+
+.form-center{
+	margin: 10px 0 0;
+}

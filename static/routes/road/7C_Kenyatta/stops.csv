@@ -1,0 +1,13 @@
+stop_id,stop_code ,stop_name,Description,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station
+0410KNC,,kencom,D,-1.28589,36.82429,,,,
+0601GPO,,GPO,D,-1.285969,36.818707,,,,
+0601SRN,,Serena,D,-1.288756,36.813043,,,,
+0501COM,,community,D,-1.292303,36.812936,,,,
+0501OLM,,old mutual,ND,-1.29862,36.813096,,,,
+0711KNS,,kenyatta hospital ndani,D,-1.300734,36.808817,,,,
+07113AV,,3rd Avenue,D,-1.294957,36.810238,,,,
+1050COM,,community,D,-1.292222,36.812888,,,,
+0600SRN,,Serena,D,-1.288756,36.813043,,,,
+1050GPO,,GPO,D,-1.28604,36.818211,,,,
+1050INM,,I&M,D,-1.284968,36.820236,,,,
+0411AMB,,Ambassadeur,D,-1.28614,36.82652,,,,

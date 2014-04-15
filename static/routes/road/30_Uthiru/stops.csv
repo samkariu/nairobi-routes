@@ -1,0 +1,47 @@
+stop_id	stop_code	stop_name	stop_desc	stop_lat	stop_lon	zone_id	stop_url	location_type	parent_station
+0811ODE		Odeon Terminus	D	-1.282757	36.825048				
+0811MUS		Museum	UD	-1.274128	36.811825				
+0801CHR		Chiromo	UD	-1.270823	36.807229				
+0811WST		Westlands	UD	-1.2628	36.80031				
+0801STM		St. Marks	UD	-1.26132	36.79749				
+0801LIO		Lions Place	UD	-1.26109	36.79608				
+0801BRK		Brookside	UD	-1.260392	36.792405				
+0811SAF		AACC/Safaricom/Church Road	UD	-1.25982	36.78687				
+0811AGA		Aga Khan High School	UD	-1.25934	36.78281				
+0811ABC		ABC Place Stage	D	-1.25897	36.7786				
+0801ABE		ABC Place Entrance	UD	-1.25919	36.77746				
+0801JGJ		James Gichuru Junction	UD	-1.25946	36.77551				
+0811KAR		KARI	D	-1.25974	36.77392				
+0811NSH		Nairobi School	D	-1.26035	36.77108				
+0801DEL		Deloitte	UD	-1.26309	36.76439				
+0801AFL		AFRALTI	UD	-1.26366	36.7613				
+0811KND		Kianda School	D	-1.26395	36.75863				
+0801SDM		Sodom	UD	-1.26425	36.75426				
+0801SGS		Sugar Board/Shell	UD	-1.26454	36.74197				
+0801MVT		Mountain View/Total Petrol Station	UD	-1.26467	36.73866				
+0811NNS		NNE Market Stage	D	-1.26357	36.72825				
+0801KBI		Kabete Technical Institute	UD	-1.26361	36.72705				
+0801ATI		AHITI	UD	-1.26374	36.72504				
+0801ILA		ILRI/Uthiru Roundabout	UD	-1.26432	36.7212				
+0801FLF		Flyover Turnoff	UD	-1.25869	36.72267				
+0801NDT		Ndumbuini terminus	UD	-1.25694	36.7237				
+0800NDT		Ndumbuini terminus	UD	-1.25694	36.7237				
+0800FON		Flyover Turnoff	UD	-1.26019	36.72189				
+0810SGB		SugarBoard	D	-1.26417	36.74399				
+0810KMI		Kangemi	D	-1.26412	36.74663				
+0800HES		Heshima Supermarket	UD	-1.26403	36.75139				
+0800CCK		CCK	UD	-1.26386	36.7578				
+0810NSH		Nairobi School Bus Stop	D	-1.26017	36.77119				
+0810KAR		KARI/James Gichuru Bus Stop	D	-1.25987	36.77262				
+0800KBB		Kabete Barracks/Njuguna's/APDK	UD	-1.25889	36.77816				
+0800WDC		Westlands DC	UD	-1.2596	36.7866				
+0810WPS		Church Road/Westlands Primary School	D	-1.26015	36.7912				
+0810LIO		Lion's Place	D	-1.260646	36.794578				
+0810STM		St. Marks Church	D	-1.26104	36.79726				
+0800GPR		Gama Pinto Road	UD	-1.26187	36.79974				
+0810WST		Westlands Stage	D	-1.26549	36.80277				
+0800EDS		Eden Square	UD	-1.26919	36.8064				
+0800CHR		Chiromo	UD	-1.270322	36.807561				
+0800MUS		Museum	UD	-1.274128	36.811825				
+0810MCP		Main Campus	D	-1.281029	36.816244				
+0810ODE		Odeon Terminus	D	-1.282757	36.825048				

@@ -1,0 +1,334 @@
+{% extends base_layout %}
+
+{% block header_title_lead %}{% endblock %}
+
+{% block content %}
+	<div id="ajax-panel"></div>
+	<div class="planner-map span9" style="margin: 0 140px">
+		<div id="map-canvas" style="width: 100%"></div>
+	</div>
+	<div class="row" style="margin: 0 75px">
+		<div class="span5" style="margin-right: 15px">
+			<div class="row">Display Matatu Routes</div>
+			<div id="route-display" class="row sec-border">
+				<form id="route-form">
+					<fieldset>
+						<div class="row">
+							<div class="span3">
+								<select name="route_id" id="route_id">
+				            	</select>
+			            	</div>
+		            	</div>
+		            	<div class="row">
+		            		<div class="span3">
+		            			<span><input id="route_include_stop" type="checkbox" />include stops</span>
+		            		</div>
+		            	</div>
+		            	<div class="form-center row">
+			                <input id="route-submit" type="submit" class="btn btn-primary" value="Visualize" />
+			            </div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="span5">
+			<div class="row">Display Railway Routes</div>
+			<div id="rail-display" class="row sec-border">
+				<form id="rail-form">
+					<fieldset>
+						<div class="row">
+							<div class="span3">
+								<select name="stop_id" id="rail_id">
+				            	</select>
+			            	</div>
+		            	</div>
+		            	<div class="row">
+		            		<div class="span3">
+		            			<span><input id="rail_include_stop" type="checkbox" />include stops</span>
+		            		</div>
+		            	</div>
+		            	<div class="form-center row">
+			                <input id="rail-submit" type="submit" class="btn btn-primary" value="Visualize" />
+			            </div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block mediaJS %}
+    <script type="text/javascript">
+        $().ready(function() {
+        	var map;
+    		var routeArray = [];
+    		var stopsArray = [];
+        	populateRoutes();
+        	
+			function initialize() {
+			  var mapOptions = {
+			      center: new google.maps.LatLng(-1.292066,36.821946),
+			      zoom: 14,
+			      mapTypeId: google.maps.MapTypeId.ROADMAP
+			    };
+			  map = new google.maps.Map(document.getElementById("map-canvas"),
+			        mapOptions);
+			  poly = new google.maps.Polyline();
+			  poly2 = new google.maps.Polyline();
+			  }
+			google.maps.event.addDomListener(window, 'load', initialize);
+			
+			function  populateRoutes() {
+				$.ajax({
+				  type: 'GET',
+				  url: '/routes/road',
+				  beforeSend:function(){
+				    $('#ajax-panel').html('<div class="loading"><img src="/img/loading.gif" alt="Loading..." /></div>');
+				  },
+				  success:function(data){
+				    $('#ajax-panel').empty();
+				    var options = '';
+				    $.each(data.routes, function(i,val) {
+					  options += '<option value="' + val + '">' + val.replace(/_/g, ' '); + '</option>';
+					  $("#route_id").html(options);
+					});
+				  },
+				  error:function(){
+				    $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+				  }
+				});
+				
+				$.ajax({
+				  type: 'GET',
+				  url: '/routes/rail',
+				  beforeSend:function(){
+				    $('#ajax-panel').html('<div class="loading"><img src="/img/loading.gif" alt="Loading..." /></div>');
+				  },
+				  success:function(data){
+				    $('#ajax-panel').empty();
+				    var options = '';
+				    $.each(data.routes, function(i,val) {
+					  options += '<option value="' + val + '">' + val.replace(/_/g, ' '); + '</option>';
+					  $("#rail_id").html(options);
+					});
+				  },
+				  error:function(){
+				    $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+				  }
+				});
+			}
+			
+		    function routePolyLine(pathCoordinates,pathCoordinates2) {
+			   			   	
+				var path = [];
+				var path2 = [];
+				poly.setMap(null);
+				poly2.setMap(null);
+				$(pathCoordinates).each(function(i,val){
+					path.push(val);
+				});
+				
+				$(pathCoordinates2).each(function(i,val){
+					path2.push(val);
+				});
+				
+				var polyOptions = {
+					path: path,
+				    strokeColor: '#073D04',
+				    strokeOpacity: 0.7,
+				    strokeWeight: 3
+			   }
+			   			   
+			   var polyOptions2 = {
+					path: path2,
+				    strokeColor: '#C04531',
+				    strokeOpacity: 0.7,
+				    strokeWeight: 3
+			   }
+			   poly.setOptions(polyOptions);
+			   poly2.setOptions(polyOptions2);
+				
+			   poly.setMap(map);
+			   poly2.setMap(map);
+			}
+			
+			function stopsMarkers(pathCoordinates) {
+				var path = [];
+				$(pathCoordinates).each(function(i,val){
+					var dir = val.stop_id.split("")[2];
+					if (dir == "1"){
+						var image = 'img/green_marker.png';
+						var marker = new google.maps.Marker({
+						    position: new google.maps.LatLng(val.stop_lat, val.stop_lon),
+						    title: val.stop_name,
+						    map: map,
+						    icon: image
+						});
+						
+					}
+					else{
+						var image = 'img/red_marker.png';
+						var marker = new google.maps.Marker({
+						    position: new google.maps.LatLng(val.stop_lat, val.stop_lon),
+						    title: val.stop_name,
+						    map: map,
+						    icon: image
+						});
+					}
+					stopsArray.push(marker);
+				});
+				
+			}
+			
+			 function clearStopOverlays() {
+			  if (stopsArray) {
+			    for (var i = 0; i < stopsArray.length; i++) {
+				    stopsArray[i].setMap(null);
+				  }
+			  }
+			}
+			
+			var route_request;
+			$("#route-form").submit(function(event){
+			    if (route_request) {
+			        route_request.abort();
+			    }
+			    var $form = $(this);
+			    var $inputs = $form.find("input, select, button, textarea");
+			    var route_name = $("#route_id").val();
+				
+				//console.log(JSON.stringify(serializedData));
+						    
+			    $inputs.prop("disabled", true);
+			    $('#ajax-panel').html('<div class="loading"><img src="/img/loading.gif" alt="Loading..." /></div>');
+			
+			    var route_request = $.ajax({
+			        url: "/route/road/" + route_name,
+			        type: "get",
+			    });
+			
+			    route_request.done(function (response, textStatus, jqXHR){
+			    	var pathCoordinates = [];
+			    	var pathCoordinates2 = [];
+			        $.each(response, function(i,val){
+			        	var dir = val.shape_pt_sequence.split("")[0];
+			        	if (dir == "1"){
+			        		pathCoordinates.push(new google.maps.LatLng(val.shape_pt_lat, val.shape_pt_lon));
+			        	}
+			        	else{
+			        		pathCoordinates2.push(new google.maps.LatLng(val.shape_pt_lat, val.shape_pt_lon));
+			        	}
+			        });
+			        routePolyLine(pathCoordinates,pathCoordinates2);
+			    });
+			
+			    route_request.fail(function (jqXHR, textStatus, errorThrown){
+			        $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+			    });
+	
+			    route_request.always(function () {
+			        $inputs.prop("disabled", false);
+			        $('#ajax-panel').empty();
+			    });
+			    
+			    clearStopOverlays();
+			    //now check for stops if requested
+			    if ($("#route_include_stop").is(':checked')){
+			    	var stops_request = $.ajax({
+				        url: "/stops/road/" + route_name,
+				        type: "get",
+				    });
+				
+				    stops_request.done(function (response, textStatus, jqXHR){
+				        stopsMarkers(response);
+				    });
+				
+				    stops_request.fail(function (jqXHR, textStatus, errorThrown){
+				        $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+				    });
+		
+				    stops_request.always(function () {
+				        $inputs.prop("disabled", false);
+				        $('#route_include_stop').prop('checked', false);
+				        $('#ajax-panel').empty();
+				    });
+				    
+			    }
+			    event.preventDefault();
+			});
+			
+			var rail_request;
+			$("#rail-form").submit(function(event){
+			    if (rail_request) {
+			        rail_request.abort();
+			    }
+			    var $form = $(this);
+			    var $inputs = $form.find("input, select, button, textarea");
+			    var route_name = $("#rail_id").val();
+										    
+			    $inputs.prop("disabled", true);
+			    $('#ajax-panel').html('<div class="loading"><img src="/img/loading.gif" alt="Loading..." /></div>');
+			
+			    var route_request = $.ajax({
+			        url: "/route/rail/" + route_name,
+			        type: "get",
+			    });
+			
+			    route_request.done(function (response, textStatus, jqXHR){
+			    	var pathCoordinates = [];
+			    	var pathCoordinates2 = [];
+			        $.each(response, function(i,val){
+			        	var dir = val.shape_pt_sequence.split("")[0];
+		        		pathCoordinates.push(new google.maps.LatLng(val.shape_pt_lat, val.shape_pt_lon));
+			        });
+			        routePolyLine(pathCoordinates,pathCoordinates2);
+			    });
+			
+			    route_request.fail(function (jqXHR, textStatus, errorThrown){
+			        $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+			    });
+	
+			    route_request.always(function () {
+			        $inputs.prop("disabled", false);
+			        $('#ajax-panel').empty();
+			    });
+			    
+			    clearStopOverlays();
+			    //now check for stops if requested
+			    if ($("#rail_include_stop").is(':checked')){
+			    	var stops_request = $.ajax({
+				        url: "/stops/rail/" + route_name,
+				        type: "get",
+				    });
+				
+				    stops_request.done(function (response, textStatus, jqXHR){
+				        stopsMarkers(response);
+				    });
+				
+				    stops_request.fail(function (jqXHR, textStatus, errorThrown){
+				        $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+				    });
+		
+				    stops_request.always(function () {
+				        $inputs.prop("disabled", false);
+				        $('#rail_include_stop').prop('checked', false);
+				        $('#ajax-panel').empty();
+				    });
+			    }
+			    event.preventDefault();
+			});
+			
+			
+			
+			$('#designated').live('change', function(){
+			    if($(this).is(':checked')){
+			        alert('checked');
+			    } else {
+			        alert('un-checked');
+			    }
+			});
+            
+        });
+    </script>
+{% endblock %}

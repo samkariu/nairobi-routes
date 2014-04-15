@@ -1,0 +1,79 @@
+stop_id	stop_code	stop_name	stop_desc	stop_lat	stop_lon	zone_id	stop_url	location_type	parent_station
+0811ODE		Odeon Terminus	D	-1.282757	36.825048				
+0811MUS		Museum	UD	-1.274128	36.811825				
+0801CHR		Chiromo	UD	-1.270823	36.807229				
+0811WST		Westlands	UD	-1.2628	36.80031				
+0801STM		St. Marks	UD	-1.26132	36.79749				
+0801LIO		Lions Place	UD	-1.26109	36.79608				
+0801BRK		Brookside	UD	-1.260405	36.792384				
+0811SAF		AACC/Safaricom/Church Road	UD	-1.25982	36.78687				
+0811AGA		Aga Khan High School	UD	-1.25934	36.78281				
+0811ABC		ABC Place Stage	D	-1.25897	36.7786				
+0801ABE		ABC Place Entrance	UD	-1.25919	36.77746				
+0801JGJ		James Gichuru Junction	UD	-1.25946	36.77551				
+0811KAR		KARI	D	-1.25974	36.77392				
+0811NSH		Nairobi School	D	-1.26035	36.77108				
+0801DEL		Deloitte	UD	-1.26309	36.76439				
+0801AFL		AFRALTI	UD	-1.26366	36.7613				
+0811KND		Kianda School	D	-1.26395	36.75863				
+0801SDM		Sodom	UD	-1.26425	36.75426				
+0801SGS		Sugar Board/Shell	UD	-1.26454	36.74197				
+0801MVT		Mountain View/Total Petrol Station	UD	-1.26467	36.73866				
+0801CUS		Custoil	UD	-1.26396	36.73031				
+0811SKO		NNE Market/Sokoni	D	-1.26373	36.72939				
+0801KBP		Kabete Police Station	UD	-1.26226	36.72651				
+0801UEN		Uthiru Exit/Nucleur Petrol Station	UD	-1.26075	36.71692				
+0801DEP		Deliverance Church/Petrol Station	UD	-1.26086	36.71329				
+0801SHC		Shell/Cooperation	UD	-1.26039	36.71069				
+0801GCC		87/Gachecheni	UD	-1.25862	36.70304				
+0811ETT		87/Total	D	-1.25788	36.70095				
+0801KGH		Kinoo Girls High School	UD	-1.2564	36.69682				
+0811JMK		Jacmil Supermarket/Kinoo Stage	D	-1.25533	36.69376				
+0801MUC		Muthiga Academy	UD	-1.25218	36.68807				
+0801MUM		Muthiga/Kikopey	UD	-1.24962	36.68444				
+0801DMN		Dominion Church	UD	-1.24759	36.68156				
+0801RGN		Regen Filling Station	UD	-1.24653	36.68024				
+0811RNG		Rungiri	D	-1.24285	36.67702				
+0801KMP		Kampala Way Filling Station	UD	-1.24038	36.67545				
+0801NGA		Kwa Ngwacii	UD	-1.23538	36.66808				
+0801KKR		Kikuyu Country Resort	UD	-1.23798	36.66641				
+0801STZ		Starehe Maize	UD	-1.241	36.66568				
+0801KOL		Kobil	UD	-1.24471	36.66527				
+0811KKS		Kikuyu Terminus	D	-1.24558	36.66505				
+0810KYU		Kikuyu terminus	D	-1.24558	36.66505				
+0800PCR		Pine Crib Apartments	UD	-1.24022	36.66573				
+0800KRY		Kikuyu Country Resort	UD	-1.23801	36.66636				
+0710GVC		Gitaru/Vantage School	D	-1.233	36.67012				
+0810KPL		Kampapla	D	-1.240285	36.675546				
+0810RUG		Rungiri	D	-1.242892	36.677207				
+0800REG		Regen	UD	-1.247038	36.681033				
+0810MTG		Muthiga	D	-1.249498	36.68443				
+0800MTG		Muthiga	UD	-1.251837	36.687823				
+0800KIN		Kinoo	UD	-1.255397	36.694309				
+0810KIN		Kinoo	D	-1.255507	36.694726				
+0810EGT		87	D	-1.257979	36.701583				
+0810WJM		Wanjimi	D	-1.258501	36.703092				
+0810COP		Cooperation	D	-1.260283	36.710522				
+0810UTH		Uthiru	D	-1.260483	36.717077				
+0800UTH		Uthiru	UD	-1.260216	36.718422				
+0810MRG		Mariguini	D	-1.261521	36.725778				
+0810KBT		Kabete PP	D	-1.263112	36.728762				
+0810TNG		Thing'o	D	-1.264372	36.738388				
+0800KGT		Mountain	UD	-1.264121	36.746457				
+0810KMI		Kangemi	D	-1.26412	36.74663				
+0800HES		Heshima Supermarket	UD	-1.26403	36.75139				
+0800CCK		CCK	UD	-1.26386	36.7578				
+0810NSH		Nairobi School Bus Stop	D	-1.26017	36.77119				
+0810KAR		KARI/James Gichuru Bus Stop	D	-1.25987	36.77262				
+0800KBB		Kabete Barracks/Njuguna's/APDK	UD	-1.25889	36.77816				
+0800WDC		Westlands DC	UD	-1.2596	36.7866				
+0810WPS		Church Road/Westlands Primary School	D	-1.26015	36.7912				
+0810LIO		Lion's Place	D	-1.260646	36.79458				
+0810STM		St. Marks Church	D	-1.26104	36.79726				
+0800GPR		Gama Pinto Road	UD	-1.26187	36.79974				
+0810WST		Westlands Stage	D	-1.26549	36.80277				
+0800EDS		Eden Square	UD	-1.26919	36.8064				
+0800CHR		Chiromo	UD	-1.270322	36.807561				
+0800MUS		Museum	UD	-1.274128	36.811825				
+0810MCP		Main Campus	D	-1.281029	36.816244				
+0810ODE		Odeon Terminus	D	-1.282757	36.825048				

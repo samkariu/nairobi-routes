@@ -1,0 +1,42 @@
+stop_id	stop_code	stop_name	stop_desc	stop_lat	stop_lon	zone_id	stop_url	location_type	parent_station
+0711KNT		Kenyatta National Hospital	D	-1.297568	36.804868				
+0510WIL		Wilson/Amref	D	-1.316664	36.813447				
+0510DAM		Dam Estate	D	-1.32278	36.804882				
+0510UCH		Uchumi/Carnival	D	-1.323257	36.801942				
+0510UHU		Uhuru Gardens	D	-1.32379	36.799285				
+0510LAN		Langata	D	-1.328433	36.789832				
+0500OIL		Oil Libya	UD	-1.327092	36.78894				
+0500GAR		Gardens	UD	-1.325519	36.790575				
+0500KIR		Kirush	UD	-1.323752	36.789895				
+0510CIV		Civil	D	-1.322659	36.788846				
+0510SOU		Southlands	D	-1.323054	36.786931				
+0510TAL		Talent/Ngei	D	-1.324225	36.785931				
+0510HIG		Langata High	D	-1.325639	36.785386				
+0500PET		St Peters	UD	-1.327623	36.785141				
+0500BAR		Barracks	UD	-1.329545	36.782486				
+0500CHI		Kwa chief	UD	-1.326736	36.780238				
+0510STA		stage	D	-1.325982	36.780167				
+0510OTI		Otiende	D	-1.323499	36.779966				
+0500PRI		Langata Prisons	UD	-1.323154	36.776741				
+0510HOS		St Marys hospital	D	-1.321754	36.774397				
+0501PRI		Womens Prison	UD	-1.323083	36.776887				
+0500SAS		Sasuma Crescent	UD	-1.32344	36.779536				
+0511OTI		Otiende	D	-1.323442	36.779936				
+0501CHI		Kwa chief	UD	-1.326155	36.780073				
+0501PET		St peters	UD	-1.326635	36.780328				
+0511MKT		Market	D	-1.327476	36.78518				
+0511MKT		Market	D	-1.325436	36.785368				
+0510NGE		Ngei Primary	D	-1.32416	36.78593				
+0511SOU		Southlands	D	-1.322925	36.787028				
+0501PAR		Park Estate	UD	-1.322477	36.787425				
+0501CIV		Civil	UD	-1.322614	36.788826				
+0511KIR		Kirush	D	-1.323652	36.789957				
+0501GAR		U. Gardens Estate	UD	-1.325387	36.790565				
+0511MOB		Mobil	D	-1.327418	36.788893				
+0600BLU		bluesky	UD	-1.312813	36.815245				
+0600APV		airportview	UD	-1.313913	36.812483				
+0600HRS		highrise	UD	-1.314683	36.808175				
+0601FLY		flyover kenyatta market	UD	-1.306358	36.803224				
+0600MOS		mosque	UD	-1.303038	36.802441				
+0600MBA		mbagathi flats	UD	-1.301077	36.802553				
+0710KNH		kenyatta/nairobi hospital	D	-1.297544	36.804193				

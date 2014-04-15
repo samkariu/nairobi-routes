@@ -1,0 +1,11 @@
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station
+0401CTY,,City stadium/Lusaka rd junctn,D,-1.29345,36.84094,,,,
+0411DTB,,Dt dobie,D,-1.29875,36.83781,,,,
+0401IND,,Industrial area,D,-1.30013,36.83601,,,,
+0411CGR,,Car  &General,D,-1.30195,36.83243,,,,
+0401SLT,,Shimo la Tewa,ND,-1.30361,36.82901,,,,
+0400NYO,,Baricho Road,Terminus,ND,-1.30411,36.82775,,,,
+0410CGR,,Car  &General,D,-1.30201,36.83195,,,,
+0400IND,,Industrial area,ND,-1.30012,36.83574,,,,
+0410DTB,,Dt dobie,D,-1.29908,36.83715,,,,
+0410CTI,,City stadium/Lusaka rd junctn,D,-1.29336,36.84073,,,,
