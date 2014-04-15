@@ -1,6 +1,6 @@
 Nairobi Routes is a Google Appengine hosted app that display all of the bus and rail routes in the Nairobi Metropolitan area.
 
-Check it out at nairobi-routes-appspot.com
+Check it out at http://nairobi-routes.appspot.com
 
 ##**API**
 It also has a rudimentary read-only API:
